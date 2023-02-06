@@ -1,18 +1,21 @@
 import './App.css';
-import Footer from './components/Footer';
-import Section from './components/Section';
-import Section2 from './components/Section2';
-import Section3 from './components/Section3';
-import Section4 from './components/Section4';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import About from './components/About';
+import Home from './components/Home';
 
 function App() {
   return (
     <>
-      <Section/>
-      <Section2/>
-      <Section3/>
-      <Section4/>
-      <Footer/>
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home/>}></Route>
+          <Route exact path='/about' element={<About/>}></Route>
+        </Routes>
+      </Router>
     </>
   );
 }

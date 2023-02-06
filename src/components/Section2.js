@@ -1,9 +1,6 @@
 import React from 'react'
-import cfp from '../image/logo.png'
 import gp from '../image/greenpremium.jpg'
-import ev from '../image/ev.jpg'
 import initiative from '../image/initiative.jpg'
-import impact from '../image/impact.webp'
 
 export default function Section2() {
   return (

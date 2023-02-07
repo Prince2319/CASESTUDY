@@ -6,6 +6,8 @@ function Section() {
   return (
     <>
        <div className="position-relative">
+
+        {/* Navigation bar for home  */}
        <nav className="navbar navbar-expand-lg bg-transparent text-dark position-absolute top-0 fs-5" >
             <div className="container-fluid border-3 border-bottom border-dark" style={{paddingBottom: "15px" , paddingLeft: "0px" , paddingRight: "0px" , margin: "0px 13px"}}>
             <Link className="navbar-brand fs-3" to="/">IITR | ChemE</Link>
@@ -40,6 +42,8 @@ function Section() {
             </div>
         </div>
         </nav>
+
+        
        <img src={logo1} className="img-fluid " alt="Responsive"></img>
        <h1 className="position-absolute top-50 fw-bold" style={{marginLeft:"35px"}}>Case study</h1>
        </div>
